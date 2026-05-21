@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table and List</title>
+<link rel ="icon" href="Sample Images/studentlogo.jpg">
+<nav class="navbar">
+  <ul class="menu-list">
+    <li><a href="#table">Student Table</a></li>
+    <li><a href="#list">Student List</a></li>
+    <li><a href="#student">About Students</a></li>
+    <li><a href="#about">About Us</a></li>
+  </ul>
+</nav>
+
+<style>
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.menu-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-list li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-list li a{
+    text-decoration: none;
+    color: white;
+}   
+
+.table{
+    background-color: pink;
+}
+   table{ 
+        text-align: center;
+         width: auto;
+         margin-left: 10px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         border-collapse: collapse;
+         color: yellow ;
+         background-color: navy;
+    }
+    th{
+        background-color: black;
+        color: white;
+    }
+        tfoot{
+            background-color: black;
+            color: white;
+        }
+        h1{
+            color: navy;
+            text-align: center;
+        }
+    
+
+</style>
+</head>
+<body>
+    <h1>Student Table</h1>
+    <div id="table" style="padding-left: 100px; padding-right: 100px ;padding-bottom: 100px; padding-top: 100px;">
+    <table border="1" >
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Mark</th>
+        </tr>
+        <tr>
+            <td>Dani</td>
+            <td>20</td>
+            <td>O</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Deepak</td>
+            <td>22</td>
+            <td>B+</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Nandha</td>
+            <td>21</td>
+            <td>A+</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right; padding-right: 190px;">Total</td>
+            <td>255</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">&copy; Student Record</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <hr>
+    <div id="list" style="background-color: yellow;">
+        <h2>Student List</h2>
+  <ol type="I" start="I">
+    <li>Name: Dani</li>
+    <li>Age: 20</li>
+    <li>Grade: O</li>
+    <li>Mark: 90</li>
+  </ol>
+    <ol type="I" start="I">
+        <li>Name: Deepak</li>
+        <li>Age: 22</li>
+        <li>Grade: B+</li>
+        <li>Mark: 80</li>
+    </ol>
+    <ol type="I" start="I">
+        <li>Name: Nandha</li>
+        <li>Age: 21</li>
+        <li>Grade: A+</li>
+        <li>Mark: 85</li>
+    </ol>
+    </div>
+
+    <hr>
+
+    <div id="student">
+<h1>About Students</h1>
+<h4>Name: Dani</h4>
+<h5>About Dani</h5>
+<p>Dani is a diligent student who consistently performs well in academics. With a strong work ethic and a passion for learning, Dani has achieved excellent grades and is known for being an active participant in class discussions
+</p>
+<h4>Name: Deepa</h4>
+<h5>About Deepak</h5>
+<p>Deepak is a diligent student who consistently performs well in academics. With a strong work ethic and a passion for learning, Dani has achieved excellent grades and is known for being an active participant in class discussions
+</p>
+<h4>Name:nandha</h4>
+<h5>About Nandha</h5>
+<p>Nandha is a diligent student who consistently performs well in academics. With a strong work ethic and a passion for learning, Dani has achieved excellent grades and is known for being an active participant in class discussions
+</p>
+</div>
+<hr>
+<div>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125059.7572346381!2d79.5019539!3d11.6149784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54b13619856321%3A0xf80cecc3332384c1!2sNeyveli%20T.S%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1779352749286!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br><br>
+    <img src="Sample Images/studentimage.png" alt="Student Logo" width="auto" height="auto">
+    <video>
+        <source src="video.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+    </video>
+
+</div>
+<div id="about">
+    <h1>About Us</h1>
+    <p>We are a group of students who are passionate about learning and sharing knowledge. Our goal is to create a supportive and engaging learning environment where we can collaborate and grow together. We believe in the power of education to transform lives and are committed to helping each other succeed.</p>
+</body>
+</html>

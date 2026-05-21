@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Movies Collection</title>
+    <rel="icon" href="Sample Images/movieicon.jpg">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: darkred;
+        }
+
+        h2{
+            color: darkblue;
+        }
+
+        ul{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: darkred;
+            color: white;
+        }
+
+        iframe{
+            display: block;
+            margin: auto;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        .section{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Favorite Tamil Movies</h1>
+
+    <!-- Movie List -->
+    <div class="section">
+        <h2>My Favorite Tamil Movies</h2>
+
+        <ul>
+            <li>Leo</li>
+            <li>Vikram</li>
+            <li>Master</li>
+            <li>Kaithi</li>
+            <li>Jailer</li>
+        </ul>
+    </div>
+
+    <!-- Movie Table -->
+    <div class="section">
+        <h2>Movie Details Table</h2>
+
+        <table>
+            <tr>
+                <th>Movie Name</th>
+                <th>Hero</th>
+                <th>Director</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>Leo</td>
+                <td>Vijay</td>
+                <td>Lokesh Kanagaraj</td>
+                <td>2023</td>
+            </tr>
+
+            <tr>
+                <td>Vikram</td>
+                <td>Kamal Haasan</td>
+                <td>Lokesh Kanagaraj</td>
+                <td>2022</td>
+            </tr>
+
+            <tr>
+                <td>Master</td>
+                <td>Vijay</td>
+                <td>Lokesh Kanagaraj</td>
+                <td>2021</td>
+            </tr>
+
+            <tr>
+                <td>Kaithi</td>
+                <td>Karthi</td>
+                <td>Lokesh Kanagaraj</td>
+                <td>2019</td>
+            </tr>
+
+            <tr>
+                <td>Jailer</td>
+                <td>Rajinikanth</td>
+                <td>Nelson</td>
+                <td>2023</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- iframe Example -->
+    <div class="section">
+        <h2>Embedded Trailer using iframe</h2>
+
+        <iframe 
+            width="700" 
+            height="400"
+            src="https://www.youtube.com/embed/Po3jStA673E"
+            title="Leo Trailer"
+            allowfullscreen>
+        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62529.86041273666!2d79.46075393310448!3d11.615059554319048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54b13619856321%3A0xf80cecc3332384c1!2sNeyveli%20T.S%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1779364028371!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- embed Tag -->
+   <div class="section">
+
+    <img src="Sample Images/phone.jpg" alt="Movie Poster" width="300" height="400">
+    <h2>Using embed Tag</h2>
+    <p>Embedded PDF Example:</p>
+    <embed 
+        src="audio/samplepdf.pdf" 
+        type="application/pdf"
+        width="600" 
+        height="400">
+</div>
+
+
+    <!-- object Tag -->
+    <div class="section">
+        <h2>Using object Tag</h2>
+
+      <object data="audio/samplepdf.pdf" type="application/pdf" width="600" height="350">
+    <p>Your browser does not support embedded PDFs. <a href="audio/samplepdf.pdf">Download the PDF</a> instead.</p>
+</object>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!--
+
+Day 1: HTML Notes
+
+HTML Structure - <!DOCTYPE html>
+Inga thaan HTML odaa start aagum.
+
+HTML – HyperText Markup Language
+CSS – Cascading Style Sheets
+
+8 bit = 1 byte
+
+HEAD Tag:
+title, css, js, icon, links
+Idhu ellamey <head> tag laa thaan varum.
+
+https://www.magnific.com/free-photos-vectors/background
+High-quality images use panna developers use pannura website.
+
+<div> </div>
+Indha tag separation / grouping ku use pannuvom.
+
+Block Element:
+It will occupy full width of the page.
+
+Inline Element:
+It will occupy only needed space.
+
+<i> Tag
+<em> Tag
+
+Rendum same madhiri italic aa theriyum.
+But <em> tag ku semantic importance adhigam.
+
+<b> Tag
+<strong> Tag
+
+Rendum bold aa theriyum.
+But <strong> tag ku semantic importance adhigam.
+
+-->
