@@ -1,0 +1,32 @@
+*{
+margin-top: 0%;
+}
+
+.header-shop{
+    margin-top: 0px;
+    background-color: aqua;
+    text-align: center;
+}
+.main-shoping{
+    margin: 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    grid-row: 1fr 1fr 1fr;
+   
+    background-color: bisque;
+}
+#reviews{
+    margin-top: 50px;
+    
+}
+
+#ad{
+    margin-top: 30px;
+ margin-left:  600px;
+}
+#foot{
+    text-align: center;
+   padding: 20px;
+    background-color: palegoldenrod;
+}

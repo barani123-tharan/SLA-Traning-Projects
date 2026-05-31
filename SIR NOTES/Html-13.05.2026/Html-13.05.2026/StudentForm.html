@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Register Page</title>
+        <link  rel="icon" href="Img/student.jpg">
+        <style>
+            .parent-flex{
+                display: flex;
+                flex-direction: column;
+                border: 2px solid black;
+                padding: 10px;
+                width: 400px;
+                margin-left: 500px;
+                border-radius: 5px;
+                box-shadow: 1px 1px 10px 5px lightblue;
+                row-gap: 3px;
+            }
+            label,input{
+                font-size: 10px;
+            }
+           
+           
+            .size{
+                 font-size: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+       
+        
+        <form class="parent-flex" action ="Output.html" method="post" target="_blank" autocomplete="off" >
+            <h4 style="margin-bottom: 0%; margin-top: 1%; text-align: center ;">Student Form</h4>
+<label for="student-name">Name:</label>
+<input type="text" name="student-name"  placeholder="Enter your Name" required>
+<label for="student-reg">Reg No:</label>
+<input type="number" name="student-reg" placeholder="Enter your Reg NO"  required >
+<label for="Student-password">Password</label>
+<input type="password" placeholder="Enter your password" >
+<label for="dob">D.O.B</label>
+<input type="date"  name="dob" value="2026-05-15"  min="2026-05-15" max="2026-06-15" required>
+<label for="Education">Education Qualification</label>
+<select name="Eduction">
+    <optgroup label="School">
+    <option value="-">Selction option</option>
+    <option  value="12th">12th</option>
+    <option value="10th">10th</option>
+    <option value="deplomo">Deplomo</option>
+    </optgroup>
+    <optgroup label="Degree">
+        <option value="bsc">BSC</option>
+        <option value="bca">BCA</option>
+        <option value="bba">BBA</option>
+    </optgroup>
+
+</select>
+
+
+<label for="student-gmail" >Gmail</label>
+<input type="email" name="student-gmail"  placeholder="Enter your gmail" required>
+
+
+<label for="Student-phone">Phone:</label>
+<input type="tel" name="student-phone" placeholder="Enter your no" required>
+<div>
+<label for="blood" class="size">Blood group:</label>
+<input type="radio" style="height: 10px;"  name="blood" value="A+">
+<span class="size" >A+</span>
+<input type="radio" style="height: 10px;"  name="blood" value="O+">
+<span class="size">O+</span>
+<input type="radio" style="height: 10px;" checked name="blood" value="B+">
+<span class="size">B+</span>
+</div>
+<div>
+<label for="hobby ">Hobby</label>
+<input type="checkbox" style="height: 10px;" name="hobby" value="dance" > 
+<span class="size">dance</span>
+<input type="checkbox" style="height: 10px;" name="hobby" value="book"> 
+<span class="size">book</span> 
+</div>
+<div>
+<label for="color">fav Color:</label>
+<input name="color" style="height: 20px; width: 20px;" type="color">
+</div>
+<label for="link" >Linken Url:</label>
+<input type="url" placeholder="Enter your Url" required>
+
+<label for="Student-image">Student Photo:</label>
+<input type="file" name="Student-image" accept=".jpg,.png,.jepg" required >
+
+<label for="Student-Document">Student Document</label>
+<input type="file"  name="Student-Document"  accept=".pdf" required>
+
+<label for="video" >Student video</label>
+<input type="file"name="video" accept=".mp4">
+
+<label for="student">Student week:</label> 
+<input type="week"  value="2026-W01" min="2026-W01" max="2026-W08" >
+
+<label for="Student-month">Student Join Month</label>
+<input type="month" value="2026-05" min="2026-05" max="2026-07">
+
+<label for="Student-time">Time:</label>
+<input type="time" value="09:00" min="09:00" max="12:00">
+
+<label for ="student">Person:</label>
+<input type="text" name="student" value="Student"  readonly>
+<label for="Feedback">Feedback</label>
+<textarea  name="Feedback" placeholder="Feedback...."></textarea>
+<div >
+<label  for="feedback-rate">Feedback Range</label>
+<input  type="range"  style="height: 5px;"  value="0" min="0"  max="5" oninput="this.nextElementSibling.value=this.value"><output>0</output> 
+</div>
+<div style="display: flex; justify-content: space-around; margin-top: 10px;">
+<button type="reset" style="background-color: lightblue; color: black; border-radius: 5px; padding: 5px;" >Reset</button>
+<button type="submit" style="background-color: lightblue; color: black; border-radius: 5px; padding: 5px;">Register</button>
+</div>
+        </form>
+
+       
+
+    </body>
+</html>

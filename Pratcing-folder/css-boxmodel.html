@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1 {
+  display: block;
+  overflow: auto;
+  box-sizing: border-box;
+  
+  /* Dimensions */
+  width: 100%;
+  height: 100px;
+  
+  /* Spacing Inside */
+  padding: 20px;
+  
+  /* Border Details (Pulli vecha blue border) */
+  border-width: 4px;
+  border-style: dotted;
+  border-color: #0b21c9ec;
+  border-radius: 5px;
+  
+  /* Alignment & Text */
+  text-align: center;
+  font-size: 28px; /* Heading thookala theriya font-size sethruken */
+  
+  /* Outside Spacing (Clean shorthand equivalent to your code) */
+  /* Order: Top (50px) | Right (10px) | Bottom (20px) | Left (20px) */
+  margin: 50px 10px 20px 20px; 
+  
+  /* Position absolute/relative illama top work aagadhudhala idhai remove panniyachu */
+  /* top: 20px; */ 
+  
+  /* Shadow (Right side soft grey shadow) */
+  box-shadow: 10px 5px 5px #e7000020;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- /* ALL BOX MODEL PROPERTIES IN A SINGLE COMPLETE CLASS */
+.box-model-master-demo {
+  
+  /* ========================================================
+     1. BOX CONTROL (Sizing Rule & Display Type)
+     Intha box eppadi behave pannanum nu control pannuthu
+     ======================================================== */
+  
+  box-sizing: border-box;          /* Width/Height set pannum podhu padding-um border-um sethu athukullaye adangidum. So calculation easy-a irukum! */
+  display: block;                  /* Intha element website-la full width-a aakiramippathu (block element) maari behave pannum. Next elements automatic-a adutha line-uku poidum. */
+  overflow: hidden;                /* Box size-a vida ulla irukura content (text/image) perusaagi veliya vandha, athai cut panni marachidhum. */
+  box-shadow: 0 4px 12px #00000020;/* Border-uku veliya oru azhagana drop shadow (nizhal) effect-a kudukum. */
+
+
+  /* ========================================================
+     2. CONTENT DIMENSIONS
+     Box-oda size-a accurate-a mudivu pannuthu
+     ======================================================== */
+  
+  width: 100%;                     /* Parent element-oda full width-aiyum eduthukum, aana max-width limit-a thandhadhu. */
+  max-width: 400px;                /* Box eevalo perusa dhaan aagalaam (Maximum limit 400px dhaan). */
+  min-width: 250px;                /* Screen chinna thaanalum, box intha size-a vida romba surungaadhu (Minimum limit 250px). */
+  height: auto;                    /* Ulla irukura content/text thagundha maari height automatic-a adjust aaguradhuku. */
+  min-height: 150px;               /* Text kammiya irundhalum, intha box nichayam 150px height-aachum compulsory irukum. */
+
+
+  /* ========================================================
+     3. PADDING (Internal Spacing)
+     Content-ukum Border-ukum naduvula ulla ubaari idaveli (Gap)
+     ======================================================== */
+  
+  padding-top: 20px;               /* Border-uku ulla, mela mattum kudukura gap. */
+  padding-right: 25px;             /* Border-uku ulla, valadhu pakkam mattum kudukura gap. */
+  padding-bottom: 20px;            /* Border-uku ulla, keela mattum kudukura gap. */
+  padding-left: 25px;              /* Border-uku ulla, idhadhu pakkam mattum kudukura gap. */
+  /* padding: 20px 25px; */        /* (Shorthand shortcut: Mela/Keela 20px | Idhadhu/Valadhu pakkam 25px) */
+
+
+  /* ========================================================
+     4. BORDER (The Frame Layer)
+     Box-ai suththoru velichuvar (Frame boundary)
+     ======================================================== */
+  
+  border-width: 4px;               /* Border kottin தடிமன் (Thickness). */
+  border-style: solid;             /* Border eppadi irukanum (solid na straight line, dashed na pulli vecha line). */
+  border-color: #4f46e5;           /* Border-oda color (Indha code oru purple-ish blue color). */
+  border-radius: 12px;             /* Box-oda naalu kooorana corners-aiyum (edges) nallaa valaithu (round) azhagaakum. */
+  /* border: 4px solid #4f46e5; */ /* (Shorthand shortcut: Width, Style, Color moonaiyum ore line-la ezhudhalaam) */
+
+
+  /* ========================================================
+     5. MARGIN (External Spacing)
+     Pakkathu element-ukum indha box-ukum naduvula irukura veli gap
+     ======================================================== */
+  
+  margin-top: 30px;                /* Intha box-uku mela irukura element-a thalli vaika 30px gap. */
+  margin-bottom: 30px;             /* Intha box-uku keela irukura element-a thalli vaika 30px gap. */
+  margin-left: auto;               /* Left and Right rendu pakkamum auto-nu potta... */
+  margin-right: auto;              /* ...intha block box automatic-a screen-oda naduvula (Center) vandhu ukandhudum! */
+  /* margin: 30px auto; */          /* (Shorthand shortcut: Top/Bottom 30px | Left/Right auto) */
+} -->
+<h1>
+    box model practice
+</h1>
+</body>
+</html>

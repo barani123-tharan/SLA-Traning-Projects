@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*:hover {
+    transition: background-color red 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+*{
+    background-color: #d2f1ff;
+}
+.class{
+    color: red;
+}
+
+#id{
+    color: blue;
+}
+
+p{
+    color: green;
+}
+
+h3,h4,h5,h6{
+    color: purple;
+}
+
+.parent-child{
+    color: orange;
+}
+
+  .descendant p {
+    color: blue;
+  }
+   
+   
+   
+   </style>
+</head>
+<body>
+    <h1>Selectors Practice</h1>
+    <br><br>
+    <h2 class="parent-class">1.Class Selector = .class-name</h2>
+    <br><br>
+
+
+    <h2 id="id">2.ID Selector = #id-name</h2>
+    <br><br>
+
+
+    <h2 >3.Element Selector = element-name</h2>
+    <p>Example: h1{color:green;}</p>
+    <br><br>
+
+
+    <h2>4.Group Selector = element-name,element-name</h2>
+    <h3>group Selector Example1</h3>
+    <h4>group Selector Example2</h4>
+    <h5>group Selector Example3</h5>
+    <h6>group Selector Example4</h6>
+    <br><br>
+
+
+    <h1 style="color: black;">Advanced Selectors Topic</h1>
+
+    <h2 class="parent-child">5.Child Selector = parent-element > child-element</h2>
+
+
+    <br><br>
+
+     <div class="descendant">
+<h2>6.Descendant Selector = parent-element child-element</h2>
+<!-- Parent Box -->
+  
+  <p>1. Idhu direct child paragraph. (Blue aagum 🔵)</p>
+
+  <div class="sub-card">
+    <p>2. Idhu grandchild paragraph. (Idhuvum Blue aagum 🔵)</p>
+    
+    <ul>
+      <li><p>3. Idhu great-grandchild paragraph. (Idhuvum Blue aagum 🔵)</p></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- Intha box veliya irukuradhala idhu maaradhu -->
+<p>4. Outside container paragraph. (No change ❌)</p>
+
+              
+
+<br><br> 
+
+
+    <h2>7.Adjacent Sibling Selector = element-name + element-name</h2>
+    <br><br>
+
+
+    <h2>8.General Sibling Selector = element-name ~ element-name</h2>
+    <br><br>
+
+</body>
+</html>

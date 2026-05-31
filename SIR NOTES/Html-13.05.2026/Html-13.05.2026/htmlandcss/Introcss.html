@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO</title>
+    <style>
+      /* tag or element selector */
+        h1{
+            /* inline=> donot apply margin ,inline-block=> margin apply,block => inline change block*/
+          display: inline-block; 
+          /* margin-left: 10px;
+            margin-top: 40px;
+            margin-bottom: 200px;
+          margin-right: 120px; */
+          /* margin: 200px 400px 500px 400px ; */
+           /* top right buttom left */
+           margin: 100px;
+            height: 300px;
+            width: 300px;
+            background-color: cadetblue;
+            color: blue;
+            border: 10px solid black;
+            border-radius: 10px;
+          font-size: 50px;
+            padding: 20px;
+          align-content: center;
+          /* top=>start to bottom=>end ; */
+            text-align: center ; 
+            /* left to right */
+            text-shadow: 2px 2px 10px red;
+             /* y=>left to right =>first  x=> top to bottom=>second  blur=>third color=> four*/
+             box-shadow: 1px 1px 10px 4px pink;
+             /* y=>left to right =>first  x=> top to bottom=>second blur=>third backgroundlayer size=>four five=>color */
+        }
+
+/* group selector  */
+        span,q,mark{
+            display: block;
+           
+        }
+
+        /* class selector */
+        .apply-all{
+            color:green;
+            background-color: beige;
+           
+            margin: 200px;
+            padding: 30px;
+            font-size: 20px;
+            font-weight: 700px;
+            text-align: center;
+        }
+
+        /* hover selector */
+        .apply-all:hover{
+          text-align: right;
+          background-color: pink;
+          border-radius: 30px;
+           border: 2px solid black;
+        }
+
+        /* id selector */
+        #h-6:hover{
+            font-size: 30px;
+        }  
+        /* child selector */
+        /* .parent >p{
+          background-color: pink;
+        }   */
+         /* descendant selector */
+        /* .parent h3:hover{
+          background-color: blue;
+        
+        }    */
+/* general sibiling=> after apply all the element */
+.parent ~h2{
+  background-color: bisque;
+
+}
+/* adjacent sibiling =>+ it only apply after tag particular */
+.parent +p{
+  font-size: 50px;
+}
+/* p:hover:after{
+  content: " day ";
+}  */
+
+.name::placeholder{
+  color: aquamarine;
+  background-color: black;
+ text-align: center;
+}
+
+/* attribute selector */
+
+input[type="email"]{
+background-color: brown;
+color: blue;
+border-radius: 30px;
+padding: 5px;
+}
+
+/* p::first-line{
+  color: blue;
+  background-color: blanchedalmond;
+} */
+
+ p::grammar-error{
+color: brown;
+background-color: red;
+ }
+li::marker{
+  color:rgb(15, 15, 122);
+}
+li:last-child{
+  color: brown;
+}
+    </style>
+</head>
+<body>
+   
+    <h1 >box1</h1>
+   <h1>box2</h1>
+   <p>Lorem ipududsum dolor <q>sit amet consectetur adipisicing </q>qelit. Nobis placeat debitis <span>aliquam neque quia quam sed?</span>spoan Modi, eos? Voluptas reprehenderit exercitationem nulla <mark>hello</mark> ea eum tenetur beatae officia accusamus quo quos.</p>
+   <hr>
+   <div>
+<p class="apply-all">send=></p>
+<h2 class="apply-all">hello</h2>
+<h3 class="apply-all">hello</h3>
+<h6 id="h-6">h-6</h6>
+   </div>
+   <hr>
+   <div class="parent">
+   
+    <h3>welcome</h3>
+     <p>Hello</p>
+     <p>run</p>
+    <article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eveniet pariatur, architecto quia quae earum dolor dolorum accusantium, fugiat quaerat dolores maiores ratione culpa magni delectus quos a nostrum vero?</p>
+      <div>
+        <p>check</p>
+      </div>
+      </article>
+   </div>
+   <h2>poin3</h2>
+   <h5>l</h5>
+   <p>hello</p>
+   <h2>game</h2>
+   <h2>time</h2>
+   <h2>point</h2>
+<hr>
+<hr>
+<p class="p-tag">Good</p>
+   <hr>
+   <hr>
+<div>
+  <label>Name</label>
+  <input type="text" class="name" placeholder="Enter your Name"><br>
+<label>Gmail</label>
+  <input type="email" placeholder="Enter your gmail">
+</div>
+<div contenteditable="true">
+  <p >
+   it go school
+  </p>
+  <ol>
+     <li>1num</li>
+     <li>3num</li>
+     <li>2num</li>
+  </ol>
+ 
+
+</div>
+
+
+
+<!-- ctrl / -->
+
+   <!-- <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xeXV1KoX034?si=VocN_mxe8UNFXF5F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div> -->
+</body>
+</html>
