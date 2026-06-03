@@ -1,8 +1,8 @@
-*{
-   background-color: aquamarine
-
+* {
+    background-color: aquamarine
 }
-.box-parent{
+
+.box-parent {
     display: flex;
     flex-direction: row;
     /* row column row-reverse column-reverse */
@@ -12,76 +12,85 @@
     /* row=> top to bottom  col=> left to right */
     height: 500px;
     /* flex-wrap: wrap; */
-       /* wrap nowrap wrap-reverse */
-gap: 1px;
-/* row column */
-/* row-gap  column-gap */
+    /* wrap nowrap wrap-reverse */
+    gap: 1px;
+    /* row column */
+    /* row-gap  column-gap */
 
 }
 
-p{
-    color:white;
+p {
+    color: white;
     font-size: 20px;
     background-color: brown;
     padding: 10px;
     /* flex-grow: 1; */
-   /* width: 50px; */
+    /* width: 50px; */
 }
 
-.b1{
+.b1 {
     /* flex: 1; */
-order: 4;
-flex-shrink: 1;
-/* flex-basis: 300px; */
+    order: 4;
+    flex-shrink: 1;
+    /* flex-basis: 300px; */
 }
-.b2{
+
+.b2 {
     /* flex:2; */
-order: 2;
-/* flex-grow: 2; */
-flex-shrink: 1;
+    order: 2;
+    /* flex-grow: 2; */
+    flex-shrink: 1;
 
-/* flex: 1; */
-}
-.b3{
-order: 3;
-/* flex-grow: 1; */
-flex-shrink: 1;
-
-/* flex: 1; */
-}
-.b4{
     /* flex: 1; */
-order: 1;
-flex-shrink: 1;
 }
-.b5{
+
+.b3 {
+    order: 3;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+
     /* flex: 1; */
-order: 5;
-flex-shrink: 1;
 }
-.b6{
-       /* flex: 1; */
-order: 6;
-flex-shrink: 1;
+
+.b4 {
+    /* flex: 1; */
+    order: 1;
+    flex-shrink: 1;
+}
+
+.b5 {
+    /* flex: 1; */
+    order: 5;
+    flex-shrink: 1;
+}
+
+.b6 {
+    /* flex: 1; */
+    order: 6;
+    flex-shrink: 1;
 
 }
-.b7{
-       /* flex: 1; */
-order: 7;
-flex-shrink: 1;
+
+.b7 {
+    /* flex: 1; */
+    order: 7;
+    flex-shrink: 1;
 }
-.b8{
-       /* flex: 1; */
-order: 8;
-flex-shrink: 1;
+
+.b8 {
+    /* flex: 1; */
+    order: 8;
+    flex-shrink: 1;
 }
-.b9{
-       /* flex: 1; */
-order: 9;
-flex-shrink: 1;
+
+.b9 {
+    /* flex: 1; */
+    order: 9;
+    flex-shrink: 1;
 }
-.b10{
-       /* flex: 1; */
+
+.b10 {
+    /* flex: 1; */
     order: 1;
     flex-shrink: 1;
 }

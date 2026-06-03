@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Concept</title>
+    
+    <style>
+        body{
+            background-color: sandybrown;
+        }
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+ .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-row: span 2;
+ }
+
+ .para{
+        padding: 20px;
+        background-color: steelblue;
+        color: white;
+ }
+
+    .grid{
+        display: grid;
+       margin: 20px;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: 150px 200px;
+         grid-auto-rows: 100px;
+         gap: 20px;
+    }
+
+    .box{
+        display: grid;
+        padding: 20px;
+        background-color: green;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    </style>
+</head>
+
+<body>
+<h1>Grid Concept</h1>
+<div class="container">
+    <div class="para">
+        <p>1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>8. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>9. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="para">
+        <p>10. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+
+</div>
+
+<div class="grid">
+    <p class="box">1</p>
+    <p class="box">2</p>
+    <p class="box">3</p>
+    <p class="box">4</p>
+    <p class="box">5</p>
+    <p class="box">6</p>
+    <p class="box">7</p>
+    <p class="box">8</p>
+    <p class="box">9</p>
+    <p class="box">10</p>
+</div>
+</body>
+
+</html>    

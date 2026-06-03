@@ -37,9 +37,75 @@ h3,h4,h5,h6{
     color: blue;
   }
    
+.adj +h3{
+    color: #16BCD9;
+    background-color: #410F06;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #16BCD9;
+    border-width: 2px 4px 0px 1px;
+}
    
+  .adj +h3:hover {
+    color: yellow;
+
+  } 
+
+.adj-gen ~ h3 {
+    color: #000000;
+    background-color: #f8fffa;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    border-width: 2px 4px 0px 1px;
+ box-shadow: 1px 2px 3px 1px lightgreen;   /*  box-shadow: 1. left-right 2. top-bottom 3. blur-radius 4. spread-radius 5. color  */
+} 
    
-   </style>
+  .adj-gen ~ h3:hover {
+    color: yellow;
+
+  } 
+
+.box-shadow{
+    color: #000000;
+    background-color: #f8fffa;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+     box-shadow: 1px 2px 1px 1px lightgreen;   /*  box-shadow: 1. left-right 2. top-bottom 3. blur-radius 4. spread-radius 5. color  */
+}
+  .box{
+    position: relative;
+    display: inline-block;
+}
+
+
+.pseudo::before{
+    content: "pseudo element selector ";
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pseudo:hover{
+    color: rgb(255, 255, 61);
+}
+
+input[type="text"]{
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px lightgreen;   /*  box-shadow: 1. left-right 2. top-bottom 3. blur-radius 4. spread-radius 5. color  */
+    border-width: 2px 4px 0px 1px;
+    padding: 2px;
+}
+.pseudo{
+    display:flex;
+    gap: 10px;
+    flex-direction: column
+
+}
+
+     </style>
 </head>
 <body>
     <h1>Selectors Practice</h1>
@@ -65,7 +131,7 @@ h3,h4,h5,h6{
     <br><br>
 
 
-    <h1 style="color: black;">Advanced Selectors Topic</h1>
+    <h1 style="color: rgb(234, 9, 9);">Advanced Selectors Topic</h1>
 
     <h2 class="parent-child">5.Child Selector = parent-element > child-element</h2>
 
@@ -95,13 +161,35 @@ h3,h4,h5,h6{
 
 <br><br> 
 
-
+    <div class="adj">
     <h2>7.Adjacent Sibling Selector = element-name + element-name</h2>
     <br><br>
 
-
+    </div>
+    <h3>This Was Selected by adjacengt sibling selector</h3>
+    <br><br>
+<div class="adj-gen">
     <h2>8.General Sibling Selector = element-name ~ element-name</h2>
     <br><br>
+</div>
+    <h3>This Was Selected by General sibling selector</h3>
+    <h3>This Was Selected by General sibling selector</h3>
+    <h3>This Was Selected by General sibling selector</h3>
+    <h3>This Was Selected by General sibling selector</h3>
+    <br><br>
+    <h3>This Was Selected by General sibling selector</h3>
+    <br><br>
+
+    <div class="box-shadow">
+        <h3>this was box-shadwo effect and how it was used   /*  box-shadow: 1. left-right 2. top-bottom 3. blur-radius 4. spread-radius 5. color  */
+</h3>
+    </div>
+        <h2 class="pseudo">Pseudo Element Selector = element-name::pseudo-element</h2>
+        <br><br>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </form>
 
 </body>
 </html>

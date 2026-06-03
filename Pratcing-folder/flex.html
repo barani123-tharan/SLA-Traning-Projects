@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Concept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Strichpunkt+Sans:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        /* *{
+            background-color: white;
+        }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;    
+}
+.order-box1 { order: 2; }
+.order-box2 { order: 3; }
+.order-box3 { order: 1; }
+.order-box4 { order: 4; }
+.order-box5 { order: 5; }
+.order-box6 { order: 6; }
+.order-box7 { order: 7; }
+.order-box8 { order: 8; }
+.order-box9 { order: 9; }
+.order-box10 { order: -1; }
+
+.order{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.order-box1{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(49, 125, 42);
+    
+}
+
+.order-box2{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 255, 213);
+    
+}
+
+.order-box3{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 242, 0);
+    
+}
+
+
+.order-box4{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(51, 255, 0);
+    
+}
+
+.order-box5{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 102, 255);
+    
+}
+
+.order-box6{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 247);
+    
+}
+
+.order-box7{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(221, 255, 0);
+    
+}
+
+.order-box8{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(179, 0, 0);
+    
+}
+
+.order-box9{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 145, 255);
+    
+}
+.order-box10{
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(114, 31, 142);
+    
+} */
+
+/*  *{ 
+    padding: 0px;
+    margin: 0px;
+    background-color: darkmagenta;
+     font-family: "Strichpunkt Sans", sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+    
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 10px;
+}
+
+
+
+.container img{
+    flex-basis: 25%;
+    height: auto; 
+    box-sizing: border-box;
+}
+
+*/
+  
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    color: darkmagenta;
+     font-family: "Strichpunkt Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+
+.container img{
+    flex-basis: 20%;
+    margin: 5px;
+    flex-grow: 1;
+}
+    </style>
+</head>
+
+<body>
+    <!-- flex-wrap -->
+    <!-- <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <br><br>
+    <hr><br><br> -->
+    <!-- Order Property -->
+    <!-- <div class="order">
+        <div class="order-box1">1</div>
+        <div class="order-box2">2</div>
+        <div class="order-box3">3</div>
+        <div class="order-box4">4</div>
+        <div class="order-box5">5</div>
+        <div class="order-box6">6</div>
+        <div class="order-box7">7</div>
+        <div class="order-box8">8</div>
+        <div class="order-box9">9</div>
+        <div class="order-box10">10</div>
+    </div> -->
+
+<h1>Image Gallery</h1>
+
+<div class="container">
+    <img src="https://picsum.photos/200/200" alt="Image 1">
+    <img src="https://picsum.photos/200/200" alt="Image 2">
+    <img src="https://picsum.photos/200/200" alt="Image 3">
+    <img src="https://picsum.photos/200/200" alt="Image 4">
+    <img src="https://picsum.photos/200/200" alt="Image 5">
+    <img src="https://picsum.photos/200/200" alt="Image 6">
+    <img src="https://picsum.photos/200/200" alt="Image 7">
+    <img src="https://picsum.photos/200/200" alt="Image 8">
+</div>
+
+
+</body>
+
+</html>

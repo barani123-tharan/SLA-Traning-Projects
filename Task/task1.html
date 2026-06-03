@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
   <link href="https://googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <!-- FontAwesome for Social Icons -->
   <link rel="stylesheet" href="https://cloudflare.com">
-  
+
   <style>
     /* Reset and Core Variables */
     * {
@@ -18,6 +19,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     :root {
       --bg-yellow: #FFDE4D;
       --text-purple: #5A20CB;
@@ -25,6 +27,7 @@
       --text-dark: #333333;
       --btn-purple: #6222cc;
     }
+
     body {
       font-family: 'Poppins', sans-serif;
       background-color: var(--bg-yellow);
@@ -41,7 +44,7 @@
       width: 100%;
       max-width: 1100px;
       border-radius: 4px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       padding: 40px;
       position: relative;
       overflow: hidden;
@@ -54,6 +57,7 @@
       align-items: center;
       margin-bottom: 40px;
     }
+
     .logo-badge {
       color: var(--text-red);
       font-weight: 700;
@@ -64,15 +68,18 @@
       align-items: center;
       gap: 6px;
     }
+
     .logo-badge::before {
       content: '•';
       font-size: 24px;
     }
+
     nav {
       display: flex;
       align-items: center;
       gap: 30px;
     }
+
     nav a {
       text-decoration: none;
       color: var(--text-purple);
@@ -81,15 +88,18 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
+
     .social-links {
       display: flex;
       gap: 15px;
     }
+
     .social-links a {
       color: var(--text-red);
       font-size: 16px;
       transition: opacity 0.2s;
     }
+
     .social-links a:hover {
       opacity: 0.7;
     }
@@ -108,6 +118,7 @@
     .content-side {
       position: relative;
     }
+
     .decorative-cross-left {
       position: absolute;
       left: -30px;
@@ -116,6 +127,7 @@
       font-weight: bold;
       font-size: 20px;
     }
+
     .main-headline {
       font-size: 52px;
       font-weight: 800;
@@ -126,6 +138,7 @@
       position: relative;
       display: inline-block;
     }
+
     /* Yellow highlight block behind title text */
     .main-headline::after {
       content: '';
@@ -137,6 +150,7 @@
       background-color: #FFF2B2;
       z-index: -1;
     }
+
     .sub-headline {
       color: var(--text-red);
       font-size: 22px;
@@ -145,6 +159,7 @@
       letter-spacing: 1px;
       margin-bottom: 25px;
     }
+
     .description-text {
       color: #666;
       font-size: 13px;
@@ -152,10 +167,12 @@
       margin-bottom: 35px;
       max-width: 440px;
     }
+
     .cta-group {
       display: flex;
       gap: 20px;
     }
+
     .btn {
       padding: 12px 35px;
       border-radius: 50px;
@@ -166,14 +183,17 @@
       transition: transform 0.2s, box-shadow 0.2s;
       text-align: center;
     }
+
     .btn:hover {
       transform: translateY(-2px);
     }
+
     .btn-primary {
       background-color: var(--btn-purple);
       color: #ffffff;
       box-shadow: 0 5px 15px rgba(98, 34, 204, 0.3);
     }
+
     .btn-secondary {
       border: 2px solid var(--btn-purple);
       color: var(--text-purple);
@@ -187,15 +207,17 @@
       justify-content: center;
       align-items: center;
     }
+
     .avatar-wrapper {
       width: 320px;
       height: 320px;
       border-radius: 50%;
       overflow: hidden;
-      border: 1px solid rgba(0,0,0,0.05);
+      border: 1px solid rgba(0, 0, 0, 0.05);
       position: relative;
       z-index: 2;
     }
+
     .avatar-wrapper img {
       width: 100%;
       height: 100%;
@@ -214,6 +236,7 @@
       transform: rotate(-45deg);
       z-index: 1;
     }
+
     .widget-chat {
       position: absolute;
       left: 10px;
@@ -230,6 +253,7 @@
       padding: 12px;
       box-shadow: 0 8px 16px rgba(255, 74, 90, 0.3);
     }
+
     .widget-chat::after {
       content: '';
       position: absolute;
@@ -239,13 +263,17 @@
       border-style: solid;
       border-color: var(--text-red) transparent;
     }
+
     .chat-line {
       height: 3px;
       background-color: #fff;
       border-radius: 2px;
     }
-    .chat-line.short { width: 60%; }
-    
+
+    .chat-line.short {
+      width: 60%;
+    }
+
     .widget-calendar {
       position: absolute;
       top: 10px;
@@ -261,12 +289,14 @@
       gap: 4px;
       align-content: end;
     }
+
     .calendar-dot {
       width: 6px;
       height: 6px;
       background-color: #55CBB7;
       border-radius: 50%;
     }
+
     .calendar-dot.active {
       background-color: var(--text-purple);
     }
@@ -280,7 +310,12 @@
       z-index: 3;
       animation: spin 20s linear infinite;
     }
-    @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
     /* Scattered Background Accents */
     .dot-matrix {
@@ -289,23 +324,46 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 8px;
     }
+
     .dot-matrix span {
       width: 5px;
       height: 5px;
       background-color: #CBD5E1;
       border-radius: 50%;
     }
-    .dots-top-center { top: 30px; left: 35%; }
-    .dots-bottom-right { bottom: 40px; right: 30px; }
-    .dots-bottom-left { bottom: 30px; left: 42%; }
-    
+
+    .dots-top-center {
+      top: 30px;
+      left: 35%;
+    }
+
+    .dots-bottom-right {
+      bottom: 40px;
+      right: 30px;
+    }
+
+    .dots-bottom-left {
+      bottom: 30px;
+      left: 42%;
+    }
+
     .bg-cross {
       position: absolute;
       font-weight: bold;
       font-size: 18px;
     }
-    .cross-top-right { top: 40px; right: 18%; color: var(--text-purple); }
-    .cross-bottom-center { bottom: 40px; left: 30%; color: #22C55E; }
+
+    .cross-top-right {
+      top: 40px;
+      right: 18%;
+      color: var(--text-purple);
+    }
+
+    .cross-bottom-center {
+      bottom: 40px;
+      left: 30%;
+      color: #22C55E;
+    }
 
     /* Responsive Breakpoint */
     @media (max-width: 900px) {
@@ -313,21 +371,47 @@
         grid-template-columns: 1fr;
         text-align: center;
       }
-      .main-headline::after { left: 25%; width: 50%; }
-      .description-text { margin-left: auto; margin-right: auto; }
-      .cta-group { justify-content: center; }
-      .visual-side { margin-top: 40px; }
-      nav { display: none; } /* Simplified for mobile preview */
+
+      .main-headline::after {
+        left: 25%;
+        width: 50%;
+      }
+
+      .description-text {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta-group {
+        justify-content: center;
+      }
+
+      .visual-side {
+        margin-top: 40px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      /* Simplified for mobile preview */
     }
   </style>
 </head>
+
 <body>
 
   <div class="landing-card">
     <!-- Scattered Accents -->
-    <div class="dot-matrix dots-top-center"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-    <div class="dot-matrix dots-bottom-right"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-    <div class="dot-matrix dots-bottom-left"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="dot-matrix dots-top-center">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="dot-matrix dots-bottom-right">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="dot-matrix dots-bottom-left">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
     <div class="bg-cross cross-top-right">×</div>
     <div class="bg-cross cross-bottom-center">×</div>
 
@@ -348,14 +432,15 @@
 
     <!-- Main Content Section -->
     <main class="hero-container">
-      
+
       <!-- Left Info Column -->
       <section class="content-side">
         <div class="decorative-cross-left">×</div>
         <h1 class="main-headline">Business<br>Workshop</h1>
         <h2 class="sub-headline">Activities</h2>
         <p class="description-text">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
         </p>
         <div class="cta-group">
           <a href="#" class="btn btn-primary">Enroll Now</a>
@@ -367,5 +452,5 @@
       <section class="visual-side">
         <!-- Abstract Ring Background Elements -->
         <div class="yellow-arc-ring"></div>
-        
+
         <!-- Floating Memphis Widgets -->
