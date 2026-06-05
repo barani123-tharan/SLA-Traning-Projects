@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    .section {
+      background: #ffffff;
+      padding: 24px;
+      margin-bottom: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2c3e50;
+      font-size: 18px;
+      border-bottom: 2px solid #edf2f7;
+      padding-bottom: 8px;
+    }
+
+    /* 1.*/
+    .transition-btn {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .transition-btn:hover {
+      background-color: #2c3e50;
+    }
+
+    /* 2. */
+    .box-container {
+      width: 100%;
+      background-color: #f8f9fa;
+      border: 1px dashed #cbd5e1;
+      padding: 10px 0;
+      border-radius: 4px;
+    }
+
+    .moving-box {
+      width: 50px;
+      height: 50px;
+      background-color: #e74c3c;
+      animation: moveRight 3s linear infinite;
+    }
+
+    @keyframes moveRight {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(100% - 50px));
+      }
+    }
+
+    /* 3. */
+    .zoom-text {
+      font-size: 18px;
+      display: inline-block;
+      cursor: pointer;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .zoom-text:hover {
+      transform: scale(1.25);
+    }
+
+    /* 4. */
+    .advanced-box {
+      height: 60px;
+      background-color: #2ecc71;
+      animation: advancedJourney 4s ease-in-out 5 forwards;
+    }
+
+    @keyframes advancedJourney {
+      0% {
+        transform: translateX(0);
+        width: 100px;
+      }
+      50% {
+        background-color: #f1c40f;
+      }
+      70% {
+        background-color: #9b59b6;
+      }
+      100% {
+        transform: translateX(200px);
+        width: 500px;
+        background-color: #e67e22;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>1. Button Color Transition (Hover Me)</h2>
+    <button class="transition-btn">Hover Me</button>
+  </div>
+
+  <div class="section">
+    <h2>2. Continuous Left-to-Right Animation</h2>
+    <div class="box-container">
+      <div class="moving-box"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Smooth Text Size Transition (Hover Me)</h2>
+    <p class="zoom-text">Move your mouse over this text.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. Keyframe Animation (Runs 5 times, changes color, stays at 500px width)</h2>
+    <div class="advanced-box"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice Template</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.invoice{
+    width:800px;
+    max-width:100%;
+    background:white;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+
+.header{
+    background:linear-gradient(to right,#7f8cff,#6b73ff);
+    height:180px;
+    position:relative;
+    padding:30px 50px;
+    color:white;
+}
+
+.logo h1{
+    font-size:50px;
+    line-height:50px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#00ffb3;
+}
+
+.logo p{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.brand-img{
+    position:absolute;
+    right:40px;
+    top:20px;
+}
+
+.brand-img img{
+    width:220px;
+}
+
+
+.content{
+    padding:40px 55px;
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+
+.top h2{
+    color:#2e2e73;
+    margin-bottom:8px;
+}
+
+.top p{
+    color:#666;
+    font-size:14px;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:25px;
+}
+
+thead{
+    background:#a8b4ff;
+    color:white;
+}
+
+th,
+td{
+    padding:14px;
+}
+
+th:nth-child(2),
+th:nth-child(3),
+td:nth-child(2),
+td:nth-child(3){
+    text-align:center;
+}
+
+tbody tr:nth-child(odd){
+    background:#eef1ff;
+}
+
+tbody tr:nth-child(even){
+    background:#dfe5ff;
+}
+
+
+.total-box{
+    width:220px;
+    margin-left:auto;
+}
+
+.total-box table{
+    margin-top:10px;
+}
+
+.total-box td{
+    font-weight:bold;
+}
+
+.total-box tr:last-child{
+    color:#2d2d7d;
+    font-size:18px;
+}
+
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    margin-top:40px;
+    font-size:14px;
+    color:#555;
+}
+
+.footer h4{
+    color:#2d2d7d;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:right;
+}
+
+.social{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    margin-top:12px;
+}
+
+.social img{
+    width:30px;
+    height:30px;
+    object-fit:cover;
+}
+
+
+.binary{
+    text-align:center;
+    color:#ececff;
+    font-size:55px;
+    font-weight:bold;
+    letter-spacing:3px;
+    overflow:hidden;
+    height:90px;
+    margin-top:20px;
+    user-select:none;
+}
+
+
+@media(max-width:768px){
+
+    .header{
+        height:auto;
+        padding:25px;
+    }
+
+    .brand-img{
+        display:none;
+    }
+
+    .logo h1{
+        font-size:38px;
+        line-height:40px;
+    }
+
+    .content{
+        padding:25px;
+    }
+
+    .top{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .footer{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .contact{
+        text-align:left;
+    }
+
+    .social{
+        justify-content:flex-start;
+    }
+
+    .binary{
+        font-size:28px;
+        height:50px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="invoice">
+
+    <div class="header">
+
+        <div class="logo">
+            <h1>WEB <br> DESIGNER</h1>
+            <p><span>WWW.</span>BRANDNAME.COM</p>
+        </div>
+
+        <div class="brand-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Designer">
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="top">
+
+            <div>
+                <h2>INVOICE</h2>
+                <p>No : 0000125</p>
+            </div>
+
+            <div>
+                <h2 style="font-size:18px;">DATE</h2>
+                <p>18/05/2023</p>
+            </div>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ITEM DESCRIPTION</th>
+                    <th>QTY.</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Website Design Service</td>
+                    <td>1</td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                    <td>UI / UX Design</td>
+                    <td>1</td>
+                    <td>$800</td>
+                </tr>
+
+                <tr>
+                    <td>Responsive Development</td>
+                    <td>1</td>
+                    <td>$1200</td>
+                </tr>
+
+                <tr>
+                    <td>SEO Optimization</td>
+                    <td>1</td>
+                    <td>$500</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="total-box">
+
+            <table>
+
+                <tr>
+                    <td>SUBTOTAL</td>
+                    <td>$3500</td>
+                </tr>
+
+                <tr>
+                    <td>TAX</td>
+                    <td>$300</td>
+                </tr>
+
+                <tr>
+                    <td>TOTAL</td>
+                    <td>$3800</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="footer">
+
+            <div>
+                <h4>PAYMENT METHOD</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor.
+                </p>
+
+                <br>
+
+                <h4>TERMS AND CONDITIONS</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor.
+                </p>
+            </div>
+
+            <div class="contact">
+
+                <h4>Your Address Here</h4>
+                <p>+91 123 456 7890</p>
+                <p>www.brandname.com</p>
+
+                <div class="social">
+                    <img src="facebook.png" alt="Facebook">
+                    <img src="instagram.png" alt="Instagram">
+                    <img src="twitter.png" alt="Twitter">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="binary">
+        100101001010101001010101001010
+    </div>
+
+</div>
+
+</body>
+</html>
