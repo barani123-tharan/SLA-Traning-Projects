@@ -149,3 +149,18 @@ const date=(a,b)=>{
 
 }
 console.log(date(10,20));
+
+
+// anonymous function 
+
+// it will loop dependes up on sec
+
+// setInterval ( function(){
+//     console.log("1")
+// },1000);
+
+// settime out
+
+setTimeout (function(){
+    console.log("2")
+},10000);
