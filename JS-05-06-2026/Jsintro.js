@@ -162,5 +162,86 @@ console.log(date(10,20));
 // settime out
 
 setTimeout (function(){
-    console.log("2")
-},10000);
+    console.log("disply setTimeout function is running: "+ "1")
+},0);
+
+//   IIFE Immediately Invoked Function Expression
+(function(){
+    console.log("invoke function")
+}
+
+)();
+
+// CallBack Fuction    -- function inside calling another function in main function
+
+// function a1(a,b,a2){
+//  return a2(10,20);
+// }
+// function a2(a,b){
+//     return a+b;
+// }
+// console.log(a1(10,20,a2));
+
+
+function a3(callfun){
+    console.log("Main Function")
+    callfun();
+}
+
+function a4(){
+    console.log("Call Back Function")
+}
+
+a3(a4);
+
+function makeCoffee(callback){
+    console.log("Making your coffee...")
+   callback();
+}
+
+function notifyCustomer(){
+    console.log("Your coffee is ready! ☕")
+}
+
+makeCoffee(notifyCustomer)
+
+
+// CallBack return function
+
+ function square(num){
+    return num*num;  
+ }
+
+ function disp(){
+// console.log("I am Returning a CallBack Return Function")
+return square;
+
+ }
+ 
+ let retunmyfun =disp();
+
+ let callbackreturn = retunmyfun(5);
+
+ console.log(callbackreturn);
+
+ // Recursive Function
+
+ function count(number){
+  if (number === 1){
+    console.log("Function Stops here")
+    return;
+  }  
+  console.log(number);
+
+  count(number -1);
+
+ }
+ count(5);
+
+ // Async Function   --- it is used to get API and send alerat code
+
+
+
+
+ 
+
