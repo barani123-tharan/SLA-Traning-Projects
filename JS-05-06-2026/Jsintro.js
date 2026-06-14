@@ -238,7 +238,7 @@ return square;
  }
  count(5);
 
- // Async Function   --- it is used to get API and send alerat code
+ // Async Function   --- it is used to get API and send alerat code .
 
 
 
