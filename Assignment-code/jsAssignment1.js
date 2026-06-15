@@ -70,3 +70,13 @@ function outerFunction() {
 const mySubFunction = outerFunction();
 
 mySubFunction(); 
+
+
+
+
+
+
+
+
+
+

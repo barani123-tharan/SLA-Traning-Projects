@@ -243,5 +243,22 @@ return square;
 
 
 
+
+// Higher Order Function
+
+
+
+
+
+// Constructor Function
+
+
+
+
+
+// Generator Function
+
+
  
+
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array,Set,map</title>
+<script>
+let a1=[10, 20, 30, 40, 50];
+a1.splice(0,3,100,200,300,400)  //(start_index, delete_count, item1, item2, ...)
+
+console.log(a1);
+
+// set => Set Do Not Allow Duplicates
+
+let duplicateNumbers =[1,2,3,4,5,6,1,2,3];
+
+// Array-ah Set-ah maathuna duplicates automatic-ah parandhudum
+let uniqueSet = new Set(duplicateNumbers); 
+
+// Thirumbha athai normal array-ah maatha Spread Operator (...) use pannalaam
+let cleanArray = [...uniqueSet];
+
+console.log(cleanArray); // Output: [1, 2, 3, 4, 5]
+
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
