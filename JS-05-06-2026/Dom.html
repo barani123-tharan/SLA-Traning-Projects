@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Click Example</title>
+    <style>
+        #color {
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px 5px rgb(162, 150, 150);
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="color">Light</button>
+
+    <script>
+        function colorchanges() {
+            let btn = document.getElementById("color");
+            
+            // Listen for a click on the button
+            btn.addEventListener("click", function() {
+                // Change the button's background color to red
+                btn.style.backgroundColor = "red";
+                
+                // Optional: Change text color to white for better readability
+                btn.style.color = "white"; 
+            });
+        }
+        
+        // Initialize the event listener.
+        colorchanges();
+    </script>
+
+</body>
+</html>
