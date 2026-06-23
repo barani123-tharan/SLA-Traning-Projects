@@ -1,4 +1,5 @@
-console.log("barani")
+// console.log("barani") 
+console.log()
 
 
 function setinputdiv(a, b, callback) {
