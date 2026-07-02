@@ -1,3 +1,5 @@
+// initilitation , validation , updation   --- main for loops 
+
 // Loops
 
 // While , do-while , for loop
@@ -17,4 +19,30 @@ let num = 1;
 
  // do-while Loop
 
- 
+ // first run agitu loop then check condition
+ let numm = 1;
+
+ do {
+   console.log(numm);
+   numm++;
+ }
+   while (numm <= 10);
+   console.log("Condition False");
+
+
+   // For Loop
+
+for (let i = 2; i<=19; i++){
+   console.log(i);
+}
+console.log("Condition False");
+
+
+// sum of n num
+let n = 10;
+let ans = 0;
+for (let b=1; b<=n; b++){
+ ans = ans + b;
+console.log(b);
+}
+console.log("Sum =", ans);

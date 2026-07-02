@@ -3,18 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom </title>
+    <style>
+    #change-color{
+        background-color:pink;
+        height: 100px;
+        width: 100px;
+    }
+</style>
+<script>
+    function color(){
+        let btn =document.getElementById("btn");
+        let changecolor = document.getElementById("change-color");
+        console.log(changecolor);
+  
+
+        if (changecolor.style.backgroundColor === "pink")
+        {
+            changecolor.style.backgroundColor = "black";
+            btn.textContent = "click2";
+        }
+
+        else
+        {
+            changecolor.style.backgroundColor = "pink";
+            btn.textContent = "click1";
+        }
+  }
+
+   function choose(){
+    let change1 = document.getElementsByClassName("c")[0].value;
+
+    console.log(change1);
+
+    switch(change1){
+
+        case "1":
+           let first = document.getElementsByClassName("result")[0];
+           first.style.backgroundColor="yellow";
+           first.style.fontSize = "32px";
+            break;
+
+        case "2":
+           let second = document.getElementsByClassName("result")[1];
+           second.style.backgroundColor="green";
+           second.style.fontSize="32px";
+            break;      
+            
+        case "3":
+            let third = document.getElementsByClassName("result")[2];
+            third.style.backgroundColor="blue";
+            third.style.fontSize="32px";
+            break;
+        default:
+            break;
+    
+    }
+   }
+
+   const store = () => {
+    let name = document.getElementsByTagName("input")[0].value;
+    let email = document.getElementsByTagName("input")[1].value;
+    let dept = document.getElementsByTagName("input")[2].value;
+
+    console.log(name, email, dept);  
+
+    let display = document.getElementsByTagName("tbody")[0];
+    let addrow = ` <tr>
+        <td>${name}</td>
+            <td>${email}</td>
+            <td>${dept}</td>
+        </tr>`;
+
+        display.innerHTML += addrow;
+
+
+   }
+
+
+</script>
 </head>
 <body>
-    <script>
-        console.log("hello Js")
-let num = 1;
-while (num <= 10){
-    // console.log(num);
-}
-// console.log(num);
 
-    </script>
+    <!-- Id term -->
+
+    <h3>click this it will change color</h3>
+
+    <button id="btn" onclick="color()">Click Me</button>
+    
+    <p id="change-color">this will change the color </p>
+
+  <!-- class term -->
+
+    <h2>Class Term</h2>
+
+<select class="c" onchange="choose()">
+    <option value="0">Default</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+
+<p class="result">first</p>
+<p class="result">second</p>
+<p class="result">third</p>
+
+ <!-- tag term -->
+
+<h3>Student Form</h3>
+
+    <h5>Name:</h5>
+    <input type=" text" placeholder="Enter your name" required>
+<br><br>
+    <input type="text" placeholder="Enter your email" required>
+<br><br>
+    <input type="text" placeholder="Enter your Dept" required>
+    <br><br>
+    
+       <button onclick="store()">Store Value</button>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Dept</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+    </tbody>
+</table>
 
 </body>
 </html>
+
+
+
