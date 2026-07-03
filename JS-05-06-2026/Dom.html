@@ -10,6 +10,7 @@
         height: 100px;
         width: 100px;
     }
+
 </style>
 <script>
     function color(){
@@ -81,6 +82,34 @@
    }
 
 
+function borderr()
+{
+ let borderr = document.querySelector("#radious");
+ console.log(borderr);
+ let option= math.floor(Math.random()*4+1);
+ switch(option)
+ {
+    case 1:
+        borderr.style.borderRadius="10px";
+        break;
+
+    case 2:
+        borderr.style.borderRadius="20px";
+        break;    
+    case 3:
+        borderr.style.borderRadius="50px";
+        break;
+
+    case 4:
+        borderr.style.borderRadius="70px";
+        break;
+        
+     default:   
+    console.log("issue");
+} 
+
+}
+
 </script>
 </head>
 <body>
@@ -135,6 +164,14 @@
 
     </tbody>
 </table>
+
+<!-- Query Selector -->
+
+<h4>Query Selector</h4>
+
+<button ondblclick="borderr()">Click Here To Change Size</button>
+
+<p style="background-color: rgb(255, 0, 0); height: 100px; width: 100px; font-sizepx;" id="radious"></p>
 
 </body>
 </html>
